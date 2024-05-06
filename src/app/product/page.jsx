@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import axios from "axios";
 
 const url = "https://dummyjson.com/products";
@@ -15,6 +16,7 @@ export default function index() {
             <div key={id}>
               <h1>{title}</h1>
               <p>{description}</p>
+              <Button tit={}/>
             </div>
           </>
         );
