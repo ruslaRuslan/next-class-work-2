@@ -3,10 +3,8 @@ import axios from "axios";
 
 const url = "https://dummyjson.com/products";
 
-const {
-  data: { products },
-} = await axios.get(url);
-products.data;
+const {data: { products } } = await axios.get(url);
+
 export default function index() {
   return (
     <>
@@ -16,7 +14,7 @@ export default function index() {
             <div key={id}>
               <h1>{title}</h1>
               <p>{description}</p>
-              <Button tit={}/>
+              <Button tit={title} />
             </div>
           </>
         );

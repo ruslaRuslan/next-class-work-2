@@ -1,9 +1,13 @@
-export default function Button({ title }) {
+"use client"
+export default function Button({ tit }) {
   return (
     <>
-      <button onClick={() => {
-        console.log('remove' + title);
-      }}>remove {title}</button>
+      <button
+        onClick={() => {
+          console.log("remove" + tit);
+        }}
+      >
+        remove {tit}</button>
     </>
   );
 }
